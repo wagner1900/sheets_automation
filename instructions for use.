@@ -1,0 +1,53 @@
+This script is extensive and serves as a complete pipeline for managing, processing, and extracting data from Excel files, particularly related to clients and procedures. Here's how it works and how to integrate it effectively:
+
+Main Features:
+Client and Procedure Management:
+
+Predefined lists of clients and procedures.
+Ability to add, edit, and remove clients and procedures via the GUI.
+Support for loading additional clients and procedures from TXT files.
+Excel File Processing:
+
+Identifies blocks of colored cells (red and blue).
+Extracts data like client names, procedures, payment forms, and other attributes from these blocks.
+Handles merged cells and various formatting issues in Excel files.
+Data Extraction:
+
+Extracts detailed information like phone numbers, payment forms, and vouchers.
+Uses pattern matching and approximate string matching for robust data extraction.
+User Interface:
+
+Built with tkinter for ease of use.
+Buttons for selecting files, managing clients/procedures, and processing spreadsheets.
+Integration:
+To integrate or use this script:
+
+Setup:
+
+Ensure you have the necessary Python libraries installed: openpyxl, rapidfuzz, tkinter.
+Install them using pip if not already installed:
+bash
+Copiar código
+pip install openpyxl rapidfuzz
+Run the Script:
+
+Save the script as a .py file.
+Execute it in your Python environment.
+Usage:
+
+Launch the GUI.
+Use the provided buttons to load or manage clients/procedures.
+Select an Excel file to process.
+Output:
+
+The script saves a new Excel file with the processed data appended to the original file name (e.g., -resultado.xlsx).
+Custom Adjustments:
+
+Modify predefined client or procedure lists directly in the script.
+Change any default values or behaviors (e.g., cell colors or separators).
+Example Workflow:
+Launch the script.
+Add additional clients or procedures using TXT files or manual input.
+Select an Excel file to process.
+Review the resulting Excel file with all extracted and processed data.
+This script is robust but may need additional adjustments depending on specific file formats or use cases. 
